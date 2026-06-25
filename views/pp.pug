@@ -15,9 +15,19 @@ block content
     p For application functionality and organization, some email data, refresh tokens, and other application data may be stored locally on the user's device in JSON format.
     p No such data is stored on developer-controlled servers.
   div.box
+    h2 Data retention
+    p The application stores only the information necessary to provide its functionality, including authentication tokens and any locally saved application data, on the user's device.
+    p The developer does not retain copies of user email data or personal information on developer-controlled servers.
+    p Users may revoke the application's access to their Google Account at any time through their Google Account permissions. Revoking access prevents the application from accessing Gmail but does not automatically remove locally stored data.
+    p Users may delete locally stored application data at any time by deleting the application's data files.
+  div.box
     h2 Data sharing
     p The application does not sell, transfer, or share user email data with third parties.
     p The developer does not access, monitor, or review user email data.
+  div.box
+    h2 Data security
+    p The application communicates with Google services using encrypted HTTPS connections provided by Google's APIs.
+    p The application stores its data locally on the user's device and relies on the operating system's security and file permissions to protect that data.
   div.box
     h2 Revoking access
     p Users may revoke access at any time through their Google Account permissions settings.
